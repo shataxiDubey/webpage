@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import {GiWatch} from 'react-icons/gi'
+import SecondComponent from './SecondComponent';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <div id="top">
+    <div id="top1"><GiWatch id="logo"/>
+    <h1>WATCH</h1>
+    </div>
+   
+    <nav id="nav-bar">
+    <li>home</li>
+    <li>feedback</li>
+    </nav>
+    </div>
+<SecondComponent/> 
     </div>
   );
 }

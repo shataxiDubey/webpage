@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+.ThirdPart{
+    display:inline-block;
+    width:100%;
+text-align: center;
+}
+.ThirdPart>h2,.ThirdPart>h1{
+    margin:0;
+ font-size:large;
+ line-height:2rem;
+ font-family: 'Roboto Condensed';
+}
+.ThirdPart>h1{
+    font-family: 'Lobster',cursive;
+    font-size: xx-large;
+    font-weight:300;
+    letter-spacing:1px;
+    margin-bottom: 2rem;
+}
+.divrows{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+.divrows>div{
+    flex-basis:20%;
+    margin:2rem;
+    font-family:'Roboto',sans-serif;
+}
+.divrows>div>img{
+    width:100%;
+}
+.divrows>div>h3{
+    margin-top:2rem;
+
+}
+.divrows>div>div{
+    margin-top:2rem;
+    border:0;
+    border-bottom:2px ;
+    border-style: solid;
+    border-color: green;
+    font-weight:lighter;
+}
+
+@media screen and (max-width:950px){
+    .divrows{
+        flex-direction:column;
+        align-items:center;
+    }
+    .divrows>div{
+        width:40%;
+    }
+}
+/* @media screen and (min-width:950px){
+   .divrows>div{
+        position:relative;
+    }
+    .divrows>div>h3{
+        position:absolute;
+        top:12rem;
+        margin-top:2rem;
+    }
+    .divrows>div>div{
+        position:absolute;
+        bottom:1rem;
+        right:6rem;
+    }
+} */
